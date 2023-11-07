@@ -6,7 +6,6 @@ def run_example():
     new_order = Order.Order("Kamil", "RRrrr", random_list)
     print(f"{new_order}")
 
-
 if __name__ == '__main__':
     run_example()
 

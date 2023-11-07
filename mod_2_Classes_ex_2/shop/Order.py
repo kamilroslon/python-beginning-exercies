@@ -19,6 +19,8 @@ class Order:
         elements += f"First name: {self.first_name} | Last name: {self.last_name} | Order value: {self.summary_price}"
         return elements
 
+    def __len__(self):
+        return len(self.elements_list)
 
     def calculate_prices(self):
         total_price = 0
