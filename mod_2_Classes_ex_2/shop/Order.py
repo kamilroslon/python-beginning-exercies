@@ -22,6 +22,18 @@ class Order:
     def __len__(self):
         return len(self.elements_list)
 
+    def __eq__(self, other):
+        if self.__class__ != other.__class__:
+            return NotImplemented
+        if len(self.elements_list) != len(other.elements_list):
+            return False
+        if self.first_name != other.first_name or self.last_name != other.last_name:
+            return False
+        for element in self.elements_list:
+            if element not in other.elements_list:
+                return False
+        return True
+
     def calculate_prices(self):
         total_price = 0
         for element in self.elements_list:

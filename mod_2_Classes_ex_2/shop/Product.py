@@ -11,9 +11,10 @@ class Product:
     def __str__(self):
         return f"Product's name: {self.name} | Product's category: {self.category_name} | Unit price: {self.unit_price} | Pieces: {self.pieces}"
 
-    # def print_product(self):
-    #     print(
-    #         f"Product's name: {self.name} | Product's category: {self.category_name} | Unit price: {self.unit_price} | Pieces: {self.pieces}")
+    def __eq__(self, other):
+        if self.__class__ != other.__class__:
+            return NotImplemented
+        return (self.name == other.name and self.category_name == other.category_name and self.unit_price == other.unit_price)
 
 
 def generate_random_products():
