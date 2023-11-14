@@ -45,6 +45,7 @@ class Order:
     def add_product_to_order(self, name, category, unit_price, pieces):
         new_product = Product(name, category, unit_price, pieces)
         self._elements_list.append(new_product)
+        self.summary_price = self._calculate_prices()
 
 
 
