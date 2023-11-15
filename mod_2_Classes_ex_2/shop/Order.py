@@ -1,5 +1,8 @@
 from shop.Product import Product
+import random
 class Order:
+
+    MAX_ELEMENTS = 20
     def __init__(self, first_name, last_name, elements_list=None):
         self.first_name = first_name
         self.last_name = last_name
@@ -10,14 +13,15 @@ class Order:
         # for product in products_list:
         #     total_price += product.unit_price * product.pieces
         self.summary_price = self._calculate_prices()
+        self.summary_tax = self._calculate_tax()
 
     def __str__(self):
         elements = ""
         for element in self._elements_list:
             elements += "\n"
-            elements += f"Product: {element.name} | Pieces: {element.pieces} | Price per piece: {element.unit_price} | Total row: {element.unit_price * element.pieces}"
+            elements += f"Product: {element.name} | Pieces: {element.pieces} | Price per piece: {element.unit_price} | Total row: {element.unit_price * element.pieces} | Category: {element.category_name} | Tax rate: {TaxCalculator.show_tax_rate(element)} | Tax value: {TaxCalculator.calculate_tax(element)}"
         elements += "\n" * 2
-        elements += f"First name: {self.first_name} | Last name: {self.last_name} | Order value: {self.summary_price}"
+        elements += f"First name: {self.first_name} | Last name: {self.last_name} | Order value: {self.summary_price} | Tax value: {self.summary_tax}"
         return elements
 
     def __len__(self):
@@ -42,12 +46,33 @@ class Order:
             total_price += total_per_row
         return total_price
 
+    def _calculate_tax(self):
+        total_tax = 0
+        for element in self._elements_list:
+            total_tax_row = TaxCalculator.calculate_tax(element)
+            total_tax += total_tax_row
+        return total_tax
+
     def add_product_to_order(self, name, category, unit_price, pieces):
-        new_product = Product(name, category, unit_price, pieces)
-        self._elements_list.append(new_product)
-        self.summary_price = self._calculate_prices()
+        if len(self._elements_list) < self.MAX_ELEMENTS:
+            new_product = Product(name, category, unit_price, pieces)
+            self._elements_list.append(new_product)
+            self.summary_price = self._calculate_prices()
+        else:
+            print(f"Too much elements in list, product will not be added")
 
-
+    @classmethod
+    def generate_random_list(cls):
+        number_of_elements = random.randint(1, cls.MAX_ELEMENTS)
+        elements = []
+        for element in range(number_of_elements):
+            random_number = random.randint(1, 79)
+            products_name = f"Product_name_{element}"
+            products_category = random_number
+            unit_price = random.randint(1, 15)
+            unit_piece = random.randint(1, 10)
+            elements.append(Product(products_name, products_category, unit_price, unit_piece))
+        return elements
 
 class OrderElement:
     def __init__(self, Order):
@@ -57,3 +82,30 @@ class OrderElement:
         for product in Order.products_list:
             sum_order_entry = product.unit_price * product.pieces
             print(f"Product's name: {product.name} | Unit price: {product.unit_price} | Pieces: {product.pieces} | Row's total: {sum_order_entry}")
+
+
+class TaxCalculator:
+
+    TAX_VALUE_5 = 5
+    TAX_VALUE_8 = 8
+    TAX_VALUE_20 = 20
+
+    @staticmethod
+    def calculate_tax(element):
+        if element.category_name % 3 == 0:
+            tax_value = element.unit_price * element.pieces * TaxCalculator.TAX_VALUE_5/100
+        elif element.category_name % 2 == 0:
+            tax_value = element.unit_price * element.pieces * TaxCalculator.TAX_VALUE_8 / 100
+        else:
+            tax_value = element.unit_price * element.pieces * TaxCalculator.TAX_VALUE_20 / 100
+        return tax_value
+
+    @staticmethod
+    def show_tax_rate(element):
+        if element.category_name % 2 == 0:
+            tax_rate = TaxCalculator.TAX_VALUE_8/100
+        elif element.category_name % 3 == 0:
+            tax_rate = TaxCalculator.TAX_VALUE_5 / 100
+        else:
+            tax_rate = TaxCalculator.TAX_VALUE_20 / 100
+        return tax_rate
