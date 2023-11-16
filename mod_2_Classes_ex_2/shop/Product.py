@@ -30,14 +30,14 @@ def generate_random_products():
     return products
 
 
-def generate_random_list():
-    number_of_elements = random.randint(1, 25)
-    elements = []
-    for element in range(number_of_elements):
-        random_number = random.randint(1, 7)
-        products_name = f"Product_name_{element}"
-        products_category = f"Product_category_{element}"
-        unit_price = random.randint(1, 15)
-        unit_piece = random.randint(1, 10)
-        elements.append(Product(products_name, products_category, unit_price, unit_piece))
-    return elements
+# def generate_random_list():
+#     number_of_elements = random.randint(1, 25)
+#     elements = []
+#     for element in range(number_of_elements):
+#         random_number = random.randint(1, 7)
+#         products_name = f"Product_name_{element}"
+#         products_category = f"Product_category_{element}"
+#         unit_price = random.randint(1, 15)
+#         unit_piece = random.randint(1, 10)
+#         elements.append(Product(products_name, products_category, unit_price, unit_piece))
+#     return elements

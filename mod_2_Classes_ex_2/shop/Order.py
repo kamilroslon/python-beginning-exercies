@@ -8,6 +8,8 @@ class Order:
         self.last_name = last_name
         if elements_list is None:
             elements_list = []
+        if len(elements_list) > Order.MAX_ELEMENTS:
+            elements_list = elements_list[:Order.MAX_ELEMENTS]
         self._elements_list = elements_list
         # total_price = 0
         # for product in products_list:
@@ -21,7 +23,7 @@ class Order:
             elements += "\n"
             elements += f"Product: {element.name} | Pieces: {element.pieces} | Price per piece: {element.unit_price} | Total row: {element.unit_price * element.pieces} | Category: {element.category_name} | Tax rate: {TaxCalculator.show_tax_rate(element)} | Tax value: {TaxCalculator.calculate_tax(element)}"
         elements += "\n" * 2
-        elements += f"First name: {self.first_name} | Last name: {self.last_name} | Order value: {self.summary_price} | Tax value: {self.summary_tax}"
+        elements += f"First name: {self.first_name} | Last name: {self.last_name} | Order value: {self.summary_price} | Tax value: {self.summary_tax:.2f}"
         return elements
 
     def __len__(self):
@@ -59,11 +61,12 @@ class Order:
             self._elements_list.append(new_product)
             self.summary_price = self._calculate_prices()
         else:
+            print ("\n")
             print(f"Too much elements in list, product will not be added")
 
     @classmethod
     def generate_random_list(cls):
-        number_of_elements = random.randint(1, cls.MAX_ELEMENTS)
+        number_of_elements = random.randint(1, 30)
         elements = []
         for element in range(number_of_elements):
             random_number = random.randint(1, 79)
