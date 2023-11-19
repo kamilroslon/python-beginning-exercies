@@ -1,9 +1,10 @@
 from shop.Product import Product
+from shop.discount_policy import default_policy
 import random
 class Order:
 
     MAX_ELEMENTS = 20
-    def __init__(self, first_name, last_name, elements_list=None):
+    def __init__(self, first_name, last_name, elements_list=None, discount_policy=None):
         self.first_name = first_name
         self.last_name = last_name
         if elements_list is None:
@@ -14,8 +15,12 @@ class Order:
         # total_price = 0
         # for product in products_list:
         #     total_price += product.unit_price * product.pieces
-        self.summary_price = self._calculate_prices()
         self.summary_tax = self._calculate_tax()
+        if discount_policy is None:
+            discount_policy = default_policy
+        self.discount_policy = discount_policy
+        self.summary_price = self._calculate_prices()
+
 
     def __str__(self):
         elements = ""
@@ -46,7 +51,7 @@ class Order:
         for element in self._elements_list:
             total_per_row = element.unit_price * element.pieces
             total_price += total_per_row
-        return total_price
+        return self.discount_policy(total_price)
 
     def _calculate_tax(self):
         total_tax = 0
@@ -64,6 +69,7 @@ class Order:
             print ("\n")
             print(f"Too much elements in list, product will not be added")
 
+
     @classmethod
     def generate_random_list(cls):
         number_of_elements = random.randint(1, 30)
@@ -76,6 +82,7 @@ class Order:
             unit_piece = random.randint(1, 10)
             elements.append(Product(products_name, products_category, unit_price, unit_piece))
         return elements
+
 
 class OrderElement:
     def __init__(self, Order):
