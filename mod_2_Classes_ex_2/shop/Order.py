@@ -69,21 +69,6 @@ class Order:
             print ("\n")
             print(f"Too much elements in list, product will not be added")
 
-
-    @classmethod
-    def generate_random_list(cls):
-        number_of_elements = random.randint(1, 30)
-        elements = []
-        for element in range(number_of_elements):
-            random_number = random.randint(1, 79)
-            products_name = f"Product_name_{element}"
-            products_category = random_number
-            unit_price = random.randint(1, 15)
-            unit_piece = random.randint(1, 10)
-            elements.append(Product(products_name, products_category, unit_price, unit_piece))
-        return elements
-
-
 class OrderElement:
     def __init__(self, Order):
         self.find_elements(Order)
