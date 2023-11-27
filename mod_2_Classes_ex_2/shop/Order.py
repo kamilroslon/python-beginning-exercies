@@ -19,7 +19,7 @@ class Order:
         if discount_policy is None:
             discount_policy = default_policy
         self.discount_policy = discount_policy
-        self.summary_price = self._calculate_prices()
+        # self.summary_price = self._calculate_prices()
 
 
     def __str__(self):
@@ -45,6 +45,21 @@ class Order:
             if element not in other._elements_list:
                 return False
         return True
+
+    @property
+    def elements_list(self):
+        return self._elements_list
+
+    @property
+    def summary_price(self):
+        return self._calculate_prices()
+
+    @elements_list.setter
+    def elements_list(self, value):
+        if len(value) < Order.MAX_ELEMENTS:
+            self._elements_list = value
+        else:
+            self._elements_list = value[:Order.MAX_ELEMENTS]
 
     def _calculate_prices(self):
         total_price = 0

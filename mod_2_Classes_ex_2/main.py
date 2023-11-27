@@ -11,11 +11,8 @@ def run_example():
     new_order_christmas = Order("Kamil", "Rrrr", random_list, discount_policy=christmas_policy)
 
     print(new_order_default)
-    print(130 * "#")
-    print(new_order_loyalty)
-    print(130 * "#")
-    print(new_order_christmas)
-    print(130 * "#")
+
+    print(new_order_default.summary_price)
 
 
 if __name__ == '__main__':
