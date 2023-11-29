@@ -1,7 +1,4 @@
-import random
 import datetime
-
-
 class Product:
     def __init__(self, name, category_name, unit_price, pieces):
         self.name = name
@@ -17,8 +14,7 @@ class Product:
             return NotImplemented
         return (self.name == other.name and self.category_name == other.category_name and self.unit_price == other.unit_price)
 
-
-class Expiration_Date(Product):
+class Products_Expiration(Product):
     def __init__(self, name, category_name, unit_price, pieces, production_year, number_of_years_of_validity):
         super().__init__(name, category_name, unit_price, pieces)
         self.production_year = int(production_year)
@@ -26,7 +22,4 @@ class Expiration_Date(Product):
 
     def does_expire(self):
         date_now_year = datetime.datetime.now().year
-        if date_now_year - self.production_year < self.number_of_years_of_validity:
-            print(f"{self.name} did not expire!")
-        else:
-            print(f"{self.name} expired!")
+        return date_now_year > self.production_year + self.number_of_years_of_validity

@@ -1,7 +1,7 @@
 from shop.Order import Order
 from shop.data_generator import order_generator
 from shop.discount_policy import loyal_customer_policy, christmas_policy
-from shop.Product import Product, Expiration_Date
+from shop.Product import Products_Expiration
 
 def run_example():
 
@@ -15,8 +15,8 @@ def run_example():
     #
     # print(new_order_default.summary_price)
 
-    new_product = Expiration_Date("Some apple", "Some category", 4, 4, 2022, 2)
-    new_product.does_expire()
+    new_product = Products_Expiration("Some apple", "Some category", 4, 4, 2021, 1)
+    print(new_product.does_expire())
 
 
 if __name__ == '__main__':
