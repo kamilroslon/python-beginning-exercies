@@ -121,11 +121,12 @@ class TaxCalculator:
         return tax_rate
 
 class ExpressOrder(Order):
-    def __init__(self, first_name, last_name, order_date, delivery_fee, elements_list=None, discount_policy=None):
+
+    DELIVERY_FEE = 13
+    def __init__(self, first_name, last_name, order_date, elements_list=None, discount_policy=None):
         super().__init__(first_name, last_name, elements_list, discount_policy)
         self.order_date = order_date
-        self.delivery_fee = delivery_fee
-        self.summary_with_delivery = self.summary_price + delivery_fee
+        self.summary_with_delivery = self.summary_price + ExpressOrder.DELIVERY_FEE
 
     def __str__(self):
-        return f"Firstname: {self.first_name}, Last name: {self.last_name}, Delivery date: {self.order_date}, Delivery fee: {self.delivery_fee}, Subtotal: {self.summary_price}, Total with delivery: {self.summary_with_delivery}"
+        return f"First name: {self.first_name}, Last name: {self.last_name}, Delivery date: {self.order_date}, Delivery fee: {self.DELIVERY_FEE}, Subtotal: {self.summary_price}, Total with delivery: {self.summary_with_delivery}"

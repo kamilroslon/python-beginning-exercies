@@ -7,7 +7,7 @@ from shop.Order import ExpressOrder
 def run_example():
 
     random_list = order_generator()
-    new_express_order = ExpressOrder("Kamil", "Rrrrrr", "01-12-2023", 13, random_list)
+    new_express_order = ExpressOrder("Kamil", "Rrrrrr", "01-12-2023", random_list)
     print(new_express_order)
 
 
