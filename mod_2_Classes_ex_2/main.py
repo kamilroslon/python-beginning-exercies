@@ -1,6 +1,5 @@
 from shop.Order import Order
 from shop.data_generator import order_generator
-# from shop.discount_policy import loyal_customer_policy, christmas_policy
 from shop.Product import Products_Expiration
 from shop.Order import ExpressOrder
 from shop.discount_policy import PercentageDiscount, AbsoluteDiscount

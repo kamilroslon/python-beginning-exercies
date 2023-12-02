@@ -1,6 +1,5 @@
 from shop.Product import Product
 from shop.discount_policy import DiscountPolicy
-# from shop.discount_policy import default_policy
 import random
 class Order:
 
