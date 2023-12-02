@@ -1,5 +1,6 @@
 from shop.Product import Product
-from shop.discount_policy import default_policy
+from shop.discount_policy import DiscountPolicy
+# from shop.discount_policy import default_policy
 import random
 class Order:
 
@@ -17,7 +18,7 @@ class Order:
         #     total_price += product.unit_price * product.pieces
         self.summary_tax = self._calculate_tax()
         if discount_policy is None:
-            discount_policy = default_policy
+            discount_policy = DiscountPolicy()
         self.discount_policy = discount_policy
         # self.summary_price = self._calculate_prices()
 
@@ -66,7 +67,7 @@ class Order:
         for element in self._elements_list:
             total_per_row = element.unit_price * element.pieces
             total_price += total_per_row
-        return self.discount_policy(total_price)
+        return self.discount_policy.apply_discount(total_price)
 
     def _calculate_tax(self):
         total_tax = 0
