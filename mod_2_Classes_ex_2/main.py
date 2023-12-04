@@ -16,6 +16,7 @@ def run_example():
     print(new_express_order_default)
     print(new_express_order_discount_percentage)
     print(new_express_order_discount_absolute)
+    print(len(str(new_express_order_discount_absolute)) * "#")
 
 
 if __name__ == '__main__':
