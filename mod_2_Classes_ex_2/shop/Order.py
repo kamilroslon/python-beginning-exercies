@@ -19,8 +19,6 @@ class Order:
         if discount_policy is None:
             discount_policy = DiscountPolicy()
         self.discount_policy = discount_policy
-        # self.summary_price = self._calculate_prices()
-
 
     def __str__(self):
         elements = ""
