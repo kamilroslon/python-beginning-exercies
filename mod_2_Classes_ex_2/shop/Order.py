@@ -124,7 +124,8 @@ class ExpressOrder(Order):
     def __init__(self, first_name, last_name, order_date, elements_list=None, discount_policy=None):
         super().__init__(first_name, last_name, elements_list, discount_policy)
         self.order_date = order_date
-        self.summary_with_delivery = self.summary_price + ExpressOrder.DELIVERY_FEE
-
+        self.summary_with_delivery = self.price_with_delivery()
+    def price_with_delivery(self):
+        return super()._calculate_prices() + ExpressOrder.DELIVERY_FEE
     def __str__(self):
         return f"First name: {self.first_name}, Last name: {self.last_name}, Delivery date: {self.order_date}, Delivery fee: {self.DELIVERY_FEE}, Subtotal: {self.summary_price}, Total with delivery: {self.summary_with_delivery}"
