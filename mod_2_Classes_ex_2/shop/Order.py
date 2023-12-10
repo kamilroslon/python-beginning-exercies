@@ -24,7 +24,7 @@ class Order:
         elements = ""
         for element in self._elements_list:
             elements += "\n"
-            elements += f"Product: {element.name} | Pieces: {element.pieces} | Price per piece: {element.unit_price} | Total row: {element.unit_price * element.pieces} | Category: {element.category_name} | Tax rate: {TaxCalculator.show_tax_rate(element)} | Tax value: {TaxCalculator.calculate_tax(element)}"
+            elements += f"Identifier: {element.identifier} | Product: {element.name} | Pieces: {element.pieces} | Price per piece: {element.unit_price} | Total row: {element.unit_price * element.pieces} | Category: {element.category_name} | Tax rate: {TaxCalculator.show_tax_rate(element)} | Tax value: {TaxCalculator.calculate_tax(element)}"
         elements += "\n" * 2
         elements += f"First name: {self.first_name} | Last name: {self.last_name} | Order value: {self.summary_price} | Tax value: {self.summary_tax:.2f}"
         return elements
@@ -51,6 +51,16 @@ class Order:
     @property
     def summary_price(self):
         return self._calculate_prices()
+
+    @property
+    def return_dict(self):
+        order_elements_dict = {element.identifier: element for element in self._elements_list}
+        return order_elements_dict
+
+    @property
+    def return_dict_plus(self):
+        order_elements_dict_plus = {element.identifier + 1: element for element in self._elements_list}
+        return order_elements_dict_plus
 
     @elements_list.setter
     def elements_list(self, value):

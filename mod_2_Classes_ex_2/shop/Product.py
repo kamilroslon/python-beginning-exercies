@@ -1,13 +1,14 @@
-import datetime
+import datetime, random
 class Product:
-    def __init__(self, name, category_name, unit_price, pieces):
+    def __init__(self, name, category_name, unit_price, pieces, identifier):
         self.name = name
         self.category_name = category_name
         self.unit_price = unit_price
         self.pieces = pieces
+        self.identifier = identifier
 
     def __str__(self):
-        return f"Product's name: {self.name} | Product's category: {self.category_name} | Unit price: {self.unit_price} | Pieces: {self.pieces}"
+        return f"Product's name: {self.name} | Product's category: {self.category_name} | Unit price: {self.unit_price} | Pieces: {self.pieces} | Identifier: {self.identifier}"
 
     def __eq__(self, other):
         if self.__class__ != other.__class__:
