@@ -3,6 +3,23 @@ from shop.data_generator import order_generator
 from shop.Product import Products_Expiration
 from shop.Order import ExpressOrder
 from shop.discount_policy import PercentageDiscount, AbsoluteDiscount
+from shop.Product import Product
+
+def test_tuple_products():
+    test_products = [("Name", 1, 1, 2, 2),("Name1", 1, 1, 2, 2),("Name2", 1, 2, 2, 2)]
+    test_products1 = [("Name", 1, 1, 2, 2),("Name1", 1, 1, 2, 2),("Name2", 1, 2, 2, 3), ("Name", 1, 1, 3, 2)]
+    for element in test_products:
+        for element1 in test_products1:
+            name, category, unit_price, pieces, identifier = element
+            name1, category1, unit_price1, pieces1, identifier1 = element1
+            product = Product(name, category, unit_price, pieces, identifier)
+            product1 = Product(name1, category1, unit_price1, pieces1, identifier1)
+            if product == product1:
+                status = "Ok, products equal"
+                print(f"Status: {status}, pair: {element} - {element1}")
+            else:
+                status = "NOK, products NOT equal"
+                print(f"Status: {status}, pair: {element} - {element1}")
 
 def run_example():
 
@@ -36,5 +53,5 @@ def run_example():
     print(some_dict)
 
 if __name__ == '__main__':
-    run_example()
-
+    # run_example()
+    test_tuple_products()

@@ -13,7 +13,7 @@ class Product:
     def __eq__(self, other):
         if self.__class__ != other.__class__:
             return NotImplemented
-        return (self.name == other.name and self.category_name == other.category_name and self.unit_price == other.unit_price)
+        return (self.name == other.name and self.category_name == other.category_name and self.unit_price == other.unit_price and self.pieces == other.pieces and self.identifier == other.identifier)
 
 class Products_Expiration(Product):
     def __init__(self, name, category_name, unit_price, pieces, production_year, number_of_years_of_validity):
