@@ -1,9 +1,11 @@
+import random
+
 from shop.Order import Order
 from shop.data_generator import order_generator
 from shop.Product import Products_Expiration
 from shop.Order import ExpressOrder
 from shop.discount_policy import PercentageDiscount, AbsoluteDiscount
-from shop.Product import Product
+from shop.Product import Product, ProductsCategory
 from collections import namedtuple
 
 Apple = namedtuple("Apple", ["name", "size", "price_per_kg"])
@@ -27,6 +29,7 @@ def named_tuple():
     for attribute in apple:
         print(attribute)
 
+
 def run_example():
 
     random_list = order_generator()
@@ -40,13 +43,5 @@ def run_example():
     some_dict = {element.identifier: element for element in random_list}
     print(some_dict)
 
-    new_expired_product = Products_Expiration("Test", 2, 2.4, 5, 6, 2021, 1)
-
-    print(new_expired_product.does_expire())
-
-
-
-
 if __name__ == '__main__':
     run_example()
-    # named_tuple()

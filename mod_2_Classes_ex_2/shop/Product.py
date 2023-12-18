@@ -1,9 +1,12 @@
 import datetime, random
 from dataclasses import dataclass
+from enum import Enum, auto
+
+
 @dataclass
 class Product:
     name: str
-    category_name: int
+    category_name: str
     unit_price: float
     pieces: int
     identifier: int
@@ -14,7 +17,8 @@ class Product:
     def __eq__(self, other):
         if self.__class__ != other.__class__:
             return NotImplemented
-        return (self.name == other.name and self.category_name == other.category_name and self.unit_price == other.unit_price and self.pieces == other.pieces and self.identifier == other.identifier)
+        return (
+                    self.name == other.name and self.category_name == other.category_name and self.unit_price == other.unit_price and self.pieces == other.pieces and self.identifier == other.identifier)
 
 
 @dataclass
@@ -26,3 +30,17 @@ class Products_Expiration(Product):
         date_now_year = datetime.datetime.now().year
         return date_now_year > self.production_year + self.number_of_years_of_validity
 
+
+class AutoName(Enum):
+    def _generate_next_value_(name, start, count, last_values):
+        return name
+
+
+class ProductsCategory(AutoName):
+    HOME = auto()
+    CLEANING_PRODUCTS = auto()
+    TOILETRIES = auto()
+    BAKERY = auto()
+    FRUIT_AND_VEGETABLES = auto()
+    FRESH_MEAT = auto()
+    VEGAN_BIO = auto()

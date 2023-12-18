@@ -1,9 +1,11 @@
 from shop.Product import Product
 from shop.discount_policy import DiscountPolicy
 import random
-class Order:
 
+
+class Order:
     MAX_ELEMENTS = 20
+
     def __init__(self, first_name, last_name, elements_list=None, discount_policy=None):
         self.first_name = first_name
         self.last_name = last_name
@@ -89,8 +91,9 @@ class Order:
             self._elements_list.append(new_product)
             self.summary_price = self._calculate_prices()
         else:
-            print ("\n")
+            print("\n")
             print(f"Too much elements in list, product will not be added")
+
 
 class OrderElement:
     def __init__(self, Order):
@@ -99,38 +102,40 @@ class OrderElement:
     def find_elements(self, Order):
         for product in Order.products_list:
             sum_order_entry = product.unit_price * product.pieces
-            print(f"Product's name: {product.name} | Unit price: {product.unit_price} | Pieces: {product.pieces} | Row's total: {sum_order_entry}")
+            print(
+                f"Product's name: {product.name} | Unit price: {product.unit_price} | Pieces: {product.pieces} | Row's total: {sum_order_entry}")
 
 
 class TaxCalculator:
-
-    TAX_VALUE_5 = 5
-    TAX_VALUE_8 = 8
-    TAX_VALUE_20 = 20
+    FIVE_CATEGORY = [5, ["BAKERY", "FRUIT_AND_VEGETABLES", "FRESH_MEAT"]]
+    EIGTH_CATEGORY = [8, ["VEGAN_BIO"]]
+    TWENTY_CATEGORY = [20, [""]]
 
     @staticmethod
     def calculate_tax(element):
-        if element.category_name % 3 == 0:
-            tax_value = element.unit_price * element.pieces * TaxCalculator.TAX_VALUE_5/100
-        elif element.category_name % 2 == 0:
-            tax_value = element.unit_price * element.pieces * TaxCalculator.TAX_VALUE_8 / 100
+
+        if element.category_name in TaxCalculator.FIVE_CATEGORY[1]:
+            tax_value = element.unit_price * element.pieces * TaxCalculator.FIVE_CATEGORY[0] / 100
+        elif element.category_name in TaxCalculator.EIGTH_CATEGORY:
+            tax_value = element.unit_price * element.pieces * TaxCalculator.EIGTH_CATEGORY[0] / 100
         else:
-            tax_value = element.unit_price * element.pieces * TaxCalculator.TAX_VALUE_20 / 100
+            tax_value = element.unit_price * element.pieces * TaxCalculator.TWENTY_CATEGORY[0] / 100
         return tax_value
 
     @staticmethod
     def show_tax_rate(element):
-        if element.category_name % 2 == 0:
-            tax_rate = TaxCalculator.TAX_VALUE_8/100
-        elif element.category_name % 3 == 0:
-            tax_rate = TaxCalculator.TAX_VALUE_5 / 100
+        if element.category_name in TaxCalculator.EIGTH_CATEGORY[1]:
+            tax_rate = TaxCalculator.EIGTH_CATEGORY[0] / 100
+        elif element.category_name in TaxCalculator.FIVE_CATEGORY[1]:
+            tax_rate = TaxCalculator.FIVE_CATEGORY[0] / 100
         else:
-            tax_rate = TaxCalculator.TAX_VALUE_20 / 100
+            tax_rate = TaxCalculator.TWENTY_CATEGORY[0] / 100
         return tax_rate
 
-class ExpressOrder(Order):
 
+class ExpressOrder(Order):
     DELIVERY_FEE = 13
+
     def __init__(self, first_name, last_name, order_date, elements_list=None, discount_policy=None):
         super().__init__(first_name, last_name, elements_list, discount_policy)
         self.order_date = order_date
@@ -138,5 +143,6 @@ class ExpressOrder(Order):
     @property
     def price_with_delivery(self):
         return super()._calculate_prices() + ExpressOrder.DELIVERY_FEE
+
     def __str__(self):
         return f"First name: {self.first_name}, Last name: {self.last_name}, Delivery date: {self.order_date}, Delivery fee: {self.DELIVERY_FEE}, Subtotal: {self.summary_price}, Total with delivery: {self.price_with_delivery}"
