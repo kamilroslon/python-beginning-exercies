@@ -4,7 +4,9 @@ from shop.Product import Products_Expiration
 from shop.Order import ExpressOrder
 from shop.discount_policy import PercentageDiscount, AbsoluteDiscount
 from shop.Product import Product
+from collections import namedtuple
 
+Apple = namedtuple("Apple", ["name", "size", "price_per_kg"])
 def test_tuple_products():
 
     parameters = [("Name", 1, 1, 2, 2, "Name", 1, 1, 2, 2, True), ("Name1", 1, 1, 2, 2, "Name1", 1, 1, 2, 2, True), ("Name2", 1, 2, 2, 2, "Name2", 1, 2, 2, 3, False)]
@@ -16,6 +18,14 @@ def test_tuple_products():
         else:
             print("Not Passed")
 
+def named_tuple():
+
+    apple = Apple("TestApple", 4, 4)
+    print(apple.name)
+    print(apple[0])
+
+    for attribute in apple:
+        print(attribute)
 
 def run_example():
 
@@ -27,27 +37,16 @@ def run_example():
     new_express_order_discount_percentage = ExpressOrder("Kamil", "Rrrrrr", "01-12-2023", random_list, percentage_discount_15)
     new_express_order_discount_absolute = ExpressOrder("Kamil", "Rrrrrr", "01-12-2023", random_list, value_discount)
 
-    # print(new_express_order_default)
-    # print(new_express_order_discount_percentage)
-    # print(new_express_order_discount_absolute)
-    # print(len(str(new_express_order_discount_absolute)) * "#")
-    # # for item in new_express_order_default.elements_list:
-    # #     print(item)
-    # print(new_order)
-    #
-    # print(new_order.return_dict)
-    # print(new_order.return_dict_plus)
-    #
-    # dict_one = new_order.return_dict
-    # # dict_two = new_order.return_dict_plus
-    # # print(dict_one.update(dict_two))
-    # dict_one.update(new_order.return_dict_plus)
-    # print(dict_one)
-    #
-
     some_dict = {element.identifier: element for element in random_list}
     print(some_dict)
 
+    new_expired_product = Products_Expiration("Test", 2, 2.4, 5, 6, 2021, 1)
+
+    print(new_expired_product.does_expire())
+
+
+
+
 if __name__ == '__main__':
-    # run_example()
-    test_tuple_products()
+    run_example()
+    # named_tuple()
