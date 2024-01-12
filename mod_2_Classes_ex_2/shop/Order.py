@@ -98,7 +98,7 @@ class Order:
             raise ElementsInOrderLimit(allowed_limit=Order.MAX_ELEMENTS)
         new_product = Product(name, category, unit_price, pieces)
         self._elements_list.append(new_product)
-        self.summary_price = self._calculate_prices()
+        self.summary_price()
 
 class OrderElement:
     def __init__(self, Order):
