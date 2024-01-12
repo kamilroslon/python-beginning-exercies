@@ -14,8 +14,7 @@ class Order:
         self.last_name = last_name
         if elements_list is None:
             elements_list = []
-        self.elements_list = elements_list
-        self.summary_tax = self._calculate_tax()
+        self._elements_list = elements_list
         if discount_policy is None:
             discount_policy = DiscountPolicy()
         self.discount_policy = discount_policy
@@ -66,6 +65,10 @@ class Order:
         return self._calculate_prices()
 
     @property
+    def summary_tax(self):
+        return self._calculate_tax()
+
+    @property
     def return_dict(self):
         order_elements_dict = {
             element.identifier: element for element in self._elements_list
@@ -80,7 +83,7 @@ class Order:
         return order_elements_dict_plus
 
     def _calculate_prices(self):
-        total_price = 0
+        total_price = 0.0
         for element in self._elements_list:
             total_per_row = element.unit_price * element.pieces
             total_price += total_per_row
@@ -93,12 +96,12 @@ class Order:
             total_tax += total_tax_row
         return total_tax
 
-    def add_product_to_order(self, name, category, unit_price, pieces):
+    def add_product_to_order(self, name, category, unit_price, pieces, identifier):
         if len(self._elements_list) >= Order.MAX_ELEMENTS:
             raise ElementsInOrderLimit(allowed_limit=Order.MAX_ELEMENTS)
-        new_product = Product(name, category, unit_price, pieces)
+        new_product = Product(name, category, unit_price, pieces, identifier)
         self._elements_list.append(new_product)
-        self.summary_price()
+
 
 class OrderElement:
     def __init__(self, Order):
