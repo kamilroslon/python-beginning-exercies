@@ -83,7 +83,7 @@ class Order:
         return order_elements_dict_plus
 
     def _calculate_prices(self):
-        total_price = 0.0
+        total_price = 0
         for element in self._elements_list:
             total_per_row = element.unit_price * element.pieces
             total_price += total_per_row
@@ -101,6 +101,8 @@ class Order:
             raise ElementsInOrderLimit(allowed_limit=Order.MAX_ELEMENTS)
         new_product = Product(name, category, unit_price, pieces, identifier)
         self._elements_list.append(new_product)
+        self._calculate_prices()
+        self._calculate_tax()
 
 
 class OrderElement:

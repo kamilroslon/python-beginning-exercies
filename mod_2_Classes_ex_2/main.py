@@ -1,3 +1,4 @@
+import os.path
 import random
 from shop.Order import Order
 from shop.data_generator import order_generator
@@ -68,6 +69,16 @@ def run_example():
         print(f"Error message {error}")
         traceback.print_exc()
 
+def run_example_2():
+    random_products = order_generator(number_of_products=22)
+    new_order = Order("Kamil", "Roslon", random_products, None)
+    orders_data_path = os.path.join("data", "orders.txt")
+    with open(orders_data_path, mode="w") as orders_file:
+        orders_file.write(str(new_order))
+        orders_file.write("\n")
+
+
+
 
 if __name__ == "__main__":
-    run_example()
+    run_example_2()
