@@ -8,6 +8,7 @@ from shop.discount_policy import PercentageDiscount, AbsoluteDiscount
 from shop.Product import Product, ProductsCategory
 from collections import namedtuple
 from shop.Error import ElementsInOrderLimit
+from shop.persistence import save_order, load_order
 import traceback
 
 Apple = namedtuple("Apple", ["name", "size", "price_per_kg"])
@@ -72,13 +73,9 @@ def run_example():
 def run_example_2():
     random_products = order_generator(number_of_products=22)
     new_order = Order("Kamil", "Roslon", random_products, None)
-    orders_data_path = os.path.join("data", "orders.txt")
-    with open(orders_data_path, mode="w") as orders_file:
-        orders_file.write(str(new_order))
-        orders_file.write("\n")
-
-
-
+    save_order(new_order)
+    saved_file = load_order()
+    print(saved_file)
 
 if __name__ == "__main__":
     run_example_2()
