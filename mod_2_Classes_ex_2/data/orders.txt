@@ -1,0 +1,125 @@
+
+Identifier: 500 | Product: Product_name_0 | Pieces: 9 | Price per piece: 10 | Total row: 90 | Category: BAKERY | Tax rate: 0.05 | Tax value: 4.5
+Identifier: 954 | Product: Product_name_1 | Pieces: 7 | Price per piece: 2 | Total row: 14 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.7
+Identifier: 616 | Product: Product_name_2 | Pieces: 9 | Price per piece: 21 | Total row: 189 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 37.8
+Identifier: 482 | Product: Product_name_3 | Pieces: 15 | Price per piece: 23 | Total row: 345 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 17.25
+Identifier: 630 | Product: Product_name_4 | Pieces: 5 | Price per piece: 2 | Total row: 10 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.5
+Identifier: 799 | Product: Product_name_5 | Pieces: 9 | Price per piece: 3 | Total row: 27 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 5.4
+Identifier: 794 | Product: Product_name_6 | Pieces: 3 | Price per piece: 10 | Total row: 30 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 6.0
+Identifier: 524 | Product: Product_name_7 | Pieces: 14 | Price per piece: 3 | Total row: 42 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 8.4
+Identifier: 210 | Product: Product_name_8 | Pieces: 11 | Price per piece: 3 | Total row: 33 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 6.6
+Identifier: 879 | Product: Product_name_9 | Pieces: 10 | Price per piece: 22 | Total row: 220 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 11.0
+Identifier: 596 | Product: Product_name_10 | Pieces: 10 | Price per piece: 8 | Total row: 80 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 16.0
+Identifier: 86 | Product: Product_name_11 | Pieces: 6 | Price per piece: 11 | Total row: 66 | Category: HOME | Tax rate: 0.2 | Tax value: 13.2
+Identifier: 357 | Product: Product_name_12 | Pieces: 13 | Price per piece: 25 | Total row: 325 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 16.25
+Identifier: 303 | Product: Product_name_13 | Pieces: 15 | Price per piece: 29 | Total row: 435 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 87.0
+Identifier: 699 | Product: Product_name_14 | Pieces: 10 | Price per piece: 21 | Total row: 210 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 42.0
+Identifier: 608 | Product: Product_name_15 | Pieces: 11 | Price per piece: 13 | Total row: 143 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 7.15
+Identifier: 796 | Product: Product_name_16 | Pieces: 11 | Price per piece: 2 | Total row: 22 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 4.4
+Identifier: 33 | Product: Product_name_17 | Pieces: 6 | Price per piece: 21 | Total row: 126 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 6.3
+Identifier: 759 | Product: Product_name_18 | Pieces: 3 | Price per piece: 27 | Total row: 81 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 16.2
+Identifier: 725 | Product: Product_name_19 | Pieces: 14 | Price per piece: 20 | Total row: 280 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 56.0
+Identifier: 760 | Product: Product_name_20 | Pieces: 9 | Price per piece: 29 | Total row: 261 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 52.2
+Identifier: 548 | Product: Product_name_21 | Pieces: 11 | Price per piece: 21 | Total row: 231 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 46.2
+
+First name: Kamil | Last name: Roslon | Order value: 3260 | Tax value: 461.05
+
+Identifier: 788 | Product: Product_name_0 | Pieces: 3 | Price per piece: 10 | Total row: 30 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 6.0
+Identifier: 809 | Product: Product_name_1 | Pieces: 10 | Price per piece: 16 | Total row: 160 | Category: HOME | Tax rate: 0.2 | Tax value: 32.0
+Identifier: 620 | Product: Product_name_2 | Pieces: 1 | Price per piece: 15 | Total row: 15 | Category: HOME | Tax rate: 0.2 | Tax value: 3.0
+Identifier: 273 | Product: Product_name_3 | Pieces: 8 | Price per piece: 29 | Total row: 232 | Category: BAKERY | Tax rate: 0.05 | Tax value: 11.6
+Identifier: 856 | Product: Product_name_4 | Pieces: 1 | Price per piece: 27 | Total row: 27 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 5.4
+Identifier: 576 | Product: Product_name_5 | Pieces: 11 | Price per piece: 27 | Total row: 297 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 14.85
+Identifier: 171 | Product: Product_name_6 | Pieces: 6 | Price per piece: 11 | Total row: 66 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 3.3
+Identifier: 855 | Product: Product_name_7 | Pieces: 2 | Price per piece: 4 | Total row: 8 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 1.6
+Identifier: 189 | Product: Product_name_8 | Pieces: 7 | Price per piece: 20 | Total row: 140 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 7.0
+Identifier: 469 | Product: Product_name_9 | Pieces: 1 | Price per piece: 28 | Total row: 28 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 5.6
+Identifier: 55 | Product: Product_name_10 | Pieces: 10 | Price per piece: 7 | Total row: 70 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 3.5
+Identifier: 616 | Product: Product_name_11 | Pieces: 4 | Price per piece: 10 | Total row: 40 | Category: HOME | Tax rate: 0.2 | Tax value: 8.0
+Identifier: 431 | Product: Product_name_12 | Pieces: 8 | Price per piece: 14 | Total row: 112 | Category: BAKERY | Tax rate: 0.05 | Tax value: 5.6
+Identifier: 444 | Product: Product_name_13 | Pieces: 13 | Price per piece: 17 | Total row: 221 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 44.2
+Identifier: 514 | Product: Product_name_14 | Pieces: 4 | Price per piece: 3 | Total row: 12 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 2.4
+Identifier: 740 | Product: Product_name_15 | Pieces: 13 | Price per piece: 7 | Total row: 91 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 4.55
+Identifier: 2 | Product: Product_name_16 | Pieces: 1 | Price per piece: 17 | Total row: 17 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.85
+Identifier: 717 | Product: Product_name_17 | Pieces: 14 | Price per piece: 25 | Total row: 350 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 17.5
+Identifier: 543 | Product: Product_name_18 | Pieces: 3 | Price per piece: 8 | Total row: 24 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 4.8
+Identifier: 576 | Product: Product_name_19 | Pieces: 4 | Price per piece: 29 | Total row: 116 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 23.2
+Identifier: 656 | Product: Product_name_20 | Pieces: 13 | Price per piece: 12 | Total row: 156 | Category: BAKERY | Tax rate: 0.05 | Tax value: 7.8
+Identifier: 444 | Product: Product_name_21 | Pieces: 3 | Price per piece: 5 | Total row: 15 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.75
+
+First name: Kamil | Last name: Roslon | Order value: 2227 | Tax value: 213.50
+
+Identifier: 531 | Product: Product_name_0 | Pieces: 8 | Price per piece: 14 | Total row: 112 | Category: HOME | Tax rate: 0.2 | Tax value: 22.4
+Identifier: 539 | Product: Product_name_1 | Pieces: 4 | Price per piece: 8 | Total row: 32 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 6.4
+Identifier: 844 | Product: Product_name_2 | Pieces: 3 | Price per piece: 4 | Total row: 12 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 2.4
+Identifier: 397 | Product: Product_name_3 | Pieces: 7 | Price per piece: 1 | Total row: 7 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 0.35
+Identifier: 69 | Product: Product_name_4 | Pieces: 3 | Price per piece: 29 | Total row: 87 | Category: HOME | Tax rate: 0.2 | Tax value: 17.4
+Identifier: 905 | Product: Product_name_5 | Pieces: 11 | Price per piece: 6 | Total row: 66 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 13.2
+Identifier: 400 | Product: Product_name_6 | Pieces: 3 | Price per piece: 24 | Total row: 72 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 14.4
+Identifier: 166 | Product: Product_name_7 | Pieces: 7 | Price per piece: 3 | Total row: 21 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 4.2
+Identifier: 365 | Product: Product_name_8 | Pieces: 2 | Price per piece: 18 | Total row: 36 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 1.8
+Identifier: 128 | Product: Product_name_9 | Pieces: 10 | Price per piece: 9 | Total row: 90 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 18.0
+Identifier: 282 | Product: Product_name_10 | Pieces: 3 | Price per piece: 29 | Total row: 87 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 17.4
+Identifier: 981 | Product: Product_name_11 | Pieces: 5 | Price per piece: 29 | Total row: 145 | Category: HOME | Tax rate: 0.2 | Tax value: 29.0
+Identifier: 369 | Product: Product_name_12 | Pieces: 2 | Price per piece: 2 | Total row: 4 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 0.8
+Identifier: 44 | Product: Product_name_13 | Pieces: 10 | Price per piece: 13 | Total row: 130 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 6.5
+Identifier: 398 | Product: Product_name_14 | Pieces: 9 | Price per piece: 25 | Total row: 225 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 45.0
+Identifier: 862 | Product: Product_name_15 | Pieces: 8 | Price per piece: 26 | Total row: 208 | Category: HOME | Tax rate: 0.2 | Tax value: 41.6
+Identifier: 91 | Product: Product_name_16 | Pieces: 4 | Price per piece: 8 | Total row: 32 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 1.6
+Identifier: 373 | Product: Product_name_17 | Pieces: 8 | Price per piece: 23 | Total row: 184 | Category: HOME | Tax rate: 0.2 | Tax value: 36.8
+Identifier: 362 | Product: Product_name_18 | Pieces: 15 | Price per piece: 15 | Total row: 225 | Category: BAKERY | Tax rate: 0.05 | Tax value: 11.25
+Identifier: 283 | Product: Product_name_19 | Pieces: 1 | Price per piece: 9 | Total row: 9 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.45
+Identifier: 564 | Product: Product_name_20 | Pieces: 1 | Price per piece: 6 | Total row: 6 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 1.2
+Identifier: 827 | Product: Product_name_21 | Pieces: 4 | Price per piece: 4 | Total row: 16 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.8
+
+First name: Kamil | Last name: Roslon | Order value: 1806 | Tax value: 292.95
+
+Identifier: 573 | Product: Product_name_0 | Pieces: 4 | Price per piece: 7 | Total row: 28 | Category: BAKERY | Tax rate: 0.05 | Tax value: 1.4
+Identifier: 158 | Product: Product_name_1 | Pieces: 3 | Price per piece: 5 | Total row: 15 | Category: HOME | Tax rate: 0.2 | Tax value: 3.0
+Identifier: 931 | Product: Product_name_2 | Pieces: 12 | Price per piece: 8 | Total row: 96 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 4.8
+Identifier: 290 | Product: Product_name_3 | Pieces: 2 | Price per piece: 14 | Total row: 28 | Category: BAKERY | Tax rate: 0.05 | Tax value: 1.4
+Identifier: 395 | Product: Product_name_4 | Pieces: 12 | Price per piece: 10 | Total row: 120 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 6.0
+Identifier: 539 | Product: Product_name_5 | Pieces: 7 | Price per piece: 25 | Total row: 175 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 8.75
+Identifier: 472 | Product: Product_name_6 | Pieces: 6 | Price per piece: 7 | Total row: 42 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 8.4
+Identifier: 738 | Product: Product_name_7 | Pieces: 15 | Price per piece: 23 | Total row: 345 | Category: BAKERY | Tax rate: 0.05 | Tax value: 17.25
+Identifier: 160 | Product: Product_name_8 | Pieces: 9 | Price per piece: 1 | Total row: 9 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 1.8
+Identifier: 125 | Product: Product_name_9 | Pieces: 1 | Price per piece: 4 | Total row: 4 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.2
+Identifier: 624 | Product: Product_name_10 | Pieces: 2 | Price per piece: 6 | Total row: 12 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.6
+Identifier: 320 | Product: Product_name_11 | Pieces: 6 | Price per piece: 8 | Total row: 48 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 9.6
+Identifier: 937 | Product: Product_name_12 | Pieces: 9 | Price per piece: 4 | Total row: 36 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 1.8
+Identifier: 830 | Product: Product_name_13 | Pieces: 6 | Price per piece: 13 | Total row: 78 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 15.6
+Identifier: 776 | Product: Product_name_14 | Pieces: 6 | Price per piece: 13 | Total row: 78 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 3.9
+Identifier: 874 | Product: Product_name_15 | Pieces: 15 | Price per piece: 5 | Total row: 75 | Category: HOME | Tax rate: 0.2 | Tax value: 15.0
+Identifier: 851 | Product: Product_name_16 | Pieces: 4 | Price per piece: 24 | Total row: 96 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 4.8
+Identifier: 19 | Product: Product_name_17 | Pieces: 12 | Price per piece: 6 | Total row: 72 | Category: HOME | Tax rate: 0.2 | Tax value: 14.4
+Identifier: 437 | Product: Product_name_18 | Pieces: 13 | Price per piece: 26 | Total row: 338 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 67.6
+Identifier: 74 | Product: Product_name_19 | Pieces: 4 | Price per piece: 20 | Total row: 80 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 16.0
+Identifier: 380 | Product: Product_name_20 | Pieces: 4 | Price per piece: 28 | Total row: 112 | Category: BAKERY | Tax rate: 0.05 | Tax value: 5.6
+Identifier: 651 | Product: Product_name_21 | Pieces: 9 | Price per piece: 2 | Total row: 18 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 0.9
+
+First name: Kamil | Last name: Roslon | Order value: 1905 | Tax value: 208.80
+
+Identifier: 66 | Product: Product_name_0 | Pieces: 6 | Price per piece: 5 | Total row: 30 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 1.5
+Identifier: 55 | Product: Product_name_1 | Pieces: 11 | Price per piece: 23 | Total row: 253 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 50.6
+Identifier: 356 | Product: Product_name_2 | Pieces: 7 | Price per piece: 11 | Total row: 77 | Category: BAKERY | Tax rate: 0.05 | Tax value: 3.85
+Identifier: 649 | Product: Product_name_3 | Pieces: 5 | Price per piece: 10 | Total row: 50 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 10.0
+Identifier: 647 | Product: Product_name_4 | Pieces: 12 | Price per piece: 17 | Total row: 204 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 40.8
+Identifier: 335 | Product: Product_name_5 | Pieces: 4 | Price per piece: 22 | Total row: 88 | Category: BAKERY | Tax rate: 0.05 | Tax value: 4.4
+Identifier: 909 | Product: Product_name_6 | Pieces: 1 | Price per piece: 29 | Total row: 29 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 5.8
+Identifier: 144 | Product: Product_name_7 | Pieces: 2 | Price per piece: 28 | Total row: 56 | Category: BAKERY | Tax rate: 0.05 | Tax value: 2.8
+Identifier: 511 | Product: Product_name_8 | Pieces: 4 | Price per piece: 2 | Total row: 8 | Category: HOME | Tax rate: 0.2 | Tax value: 1.6
+Identifier: 39 | Product: Product_name_9 | Pieces: 15 | Price per piece: 3 | Total row: 45 | Category: CLEANING_PRODUCTS | Tax rate: 0.2 | Tax value: 9.0
+Identifier: 641 | Product: Product_name_10 | Pieces: 2 | Price per piece: 14 | Total row: 28 | Category: BAKERY | Tax rate: 0.05 | Tax value: 1.4
+Identifier: 997 | Product: Product_name_11 | Pieces: 15 | Price per piece: 10 | Total row: 150 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 7.5
+Identifier: 784 | Product: Product_name_12 | Pieces: 2 | Price per piece: 9 | Total row: 18 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 0.9
+Identifier: 143 | Product: Product_name_13 | Pieces: 2 | Price per piece: 25 | Total row: 50 | Category: HOME | Tax rate: 0.2 | Tax value: 10.0
+Identifier: 156 | Product: Product_name_14 | Pieces: 14 | Price per piece: 30 | Total row: 420 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 21.0
+Identifier: 340 | Product: Product_name_15 | Pieces: 2 | Price per piece: 24 | Total row: 48 | Category: BAKERY | Tax rate: 0.05 | Tax value: 2.4
+Identifier: 431 | Product: Product_name_16 | Pieces: 9 | Price per piece: 4 | Total row: 36 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 7.2
+Identifier: 499 | Product: Product_name_17 | Pieces: 9 | Price per piece: 14 | Total row: 126 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 6.3
+Identifier: 911 | Product: Product_name_18 | Pieces: 5 | Price per piece: 16 | Total row: 80 | Category: FRUIT_AND_VEGETABLES | Tax rate: 0.05 | Tax value: 4.0
+Identifier: 668 | Product: Product_name_19 | Pieces: 14 | Price per piece: 22 | Total row: 308 | Category: VEGAN_BIO | Tax rate: 0.08 | Tax value: 61.6
+Identifier: 862 | Product: Product_name_20 | Pieces: 10 | Price per piece: 20 | Total row: 200 | Category: TOILETRIES | Tax rate: 0.2 | Tax value: 40.0
+Identifier: 810 | Product: Product_name_21 | Pieces: 2 | Price per piece: 20 | Total row: 40 | Category: FRESH_MEAT | Tax rate: 0.05 | Tax value: 2.0
+
+First name: Kamil | Last name: Roslon | Order value: 2344 | Tax value: 294.65
